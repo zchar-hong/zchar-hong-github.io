@@ -25,7 +25,7 @@ categories: 工具
 - 插件丰富: 如支持jade等..
 
 ## 仓库搭建
-由于 Hexo 的部署命令 `hexo d` 是利用 hexo-deployer-git 来实现 git 推送的，其原理是通过在站点中生成 `.deploy_git` 文件夹，通过读取相关配置将其 push 到远程仓库（如果不存在会用git init）。而其中 `.deploy_git` 进包含生成的静态博客（source等源文件），因此我们需要[采用分支](https://www.zhihu.com/question/21193762)进行博客管理，即源码部分放在hexo分支上，<font color=red>编译后的博客代码放在`hexo`上，因为: github只支持master下的page！！！</font>。
+由于 Hexo 的部署命令 `hexo d` 是利用 hexo-deployer-git 来实现 git 推送的，其原理是通过在站点中生成 `.deploy_git` 文件夹，通过读取相关配置将其 push 到远程仓库（如果不存在会用git init）。而其中 `.deploy_git` 进包含生成的静态博客（source等源文件），因此我们需要[采用分支](https://www.zhihu.com/question/21193762)进行博客管理，即源码部分放在hexo分支上，<font color=red>编译后的博客代码放在hexo上，因为: github只支持master下的page！！！</font>
 
 所以，在github和coding上分别新建 zchar-hong.github.io 和 zchar（如果与用户名相同，则博客地址为 http://zchar.coding.me/ ），并分别开启 Page 功能（github在setting里，coding在代码里）。
 
